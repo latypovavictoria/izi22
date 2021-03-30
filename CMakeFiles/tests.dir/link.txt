@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -pthread   CMakeFiles/tests.dir/tests.cpp.o  -o tests -Wl,-rpath,/usr/technopark/iz2/sort /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread liblib_sort.so libbubblesort_lib.a 
