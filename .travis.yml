@@ -1,31 +1,48 @@
-name: CI
+image: gcc
+before_script:
+  - apt-get update --yes
+  - apt-get install --yes cmake
+  - apt-get install --yes libgtest-dev
+  - apt-get install --yes cppcheck
 
-# Controls when the action will run. 
-on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ iz2 ]
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+stages:
+  - lib_sort
+  - bubblesort_lib
+  - tests
+  - tests2
+  - prog
+  -progb
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+tests:
+  stage: test
+  script:
+    - ./linters/run.sh
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      
+tests2:
+  stage: tests2
+  script:
+    - mkdir sort
+    - cd sort
+    - cmake .
+  artifacts:
+    paths:
+      - "tests2"
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+tests:
+  stage: tests
+  script:
+    - cd build
+    - ./tests
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+tests:
+  script:
+    - apt-get update && apt-get install -y valgrind
+    - cd build
+    - valgrind --tool=memcheck ./tests
+    - valgrind --tool=memcheck ./tests2
+    - valgrind --tool=memcheck ./prog
+    - valgrind --tool=memcheck ./progb
+
+  when: manual
+  allow_failure: false
+
