@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -pthread   CMakeFiles/progb.dir/mainb.cpp.o  -o progb libbubblesort_lib.a 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblib_bubblesort.a  CMakeFiles/lib_bubblesort.dir/threadfb.cpp.o CMakeFiles/lib_bubblesort.dir/bubblesort.cpp.o
+/usr/bin/ranlib liblib_bubblesort.a

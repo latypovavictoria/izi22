@@ -1,0 +1,8 @@
+/usr/technopark/iz2/sort/CMakeFiles/tests2.dir
+/usr/technopark/iz2/sort/CMakeFiles/tests.dir
+/usr/technopark/iz2/sort/CMakeFiles/progb.dir
+/usr/technopark/iz2/sort/CMakeFiles/rebuild_cache.dir
+/usr/technopark/iz2/sort/CMakeFiles/bubblesort_lib.dir
+/usr/technopark/iz2/sort/CMakeFiles/prog.dir
+/usr/technopark/iz2/sort/CMakeFiles/edit_cache.dir
+/usr/technopark/iz2/sort/CMakeFiles/lib_sort.dir

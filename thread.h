@@ -1,0 +1,1 @@
+void* threadf(void* thread_data);

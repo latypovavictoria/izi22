@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/usr/technopark/iz2/sort/bubblesort.h
+
+/usr/technopark/iz2/sort/mainb.cpp
+iostream
+-
+pthread.h
+-
+cstdlib
+-
+malloc.h
+-
+threadfb.h
+/usr/technopark/iz2/sort/threadfb.h
+bubblesort.h
+/usr/technopark/iz2/sort/bubblesort.h
+sort.h
+/usr/technopark/iz2/sort/sort.h
+
+/usr/technopark/iz2/sort/sort.h
+
+/usr/technopark/iz2/sort/threadfb.h
+
