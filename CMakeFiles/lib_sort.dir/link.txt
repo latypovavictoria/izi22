@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -pthread  -shared -Wl,-soname,liblib_sort.so -o liblib_sort.so CMakeFiles/lib_sort.dir/thread.cpp.o CMakeFiles/lib_sort.dir/sort.cpp.o 

@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -pthread   CMakeFiles/prog.dir/main.cpp.o  -o prog -Wl,-rpath,/usr/technopark/iz2/sort libbubblesort_lib.a liblib_sort.so 

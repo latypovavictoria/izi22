@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/usr/technopark/iz2/sort/sort.cpp
+iostream
+-
+pthread.h
+-
+cstdlib
+-
+malloc.h
+-
+sort.h
+/usr/technopark/iz2/sort/sort.h
+
+/usr/technopark/iz2/sort/sort.h
+
